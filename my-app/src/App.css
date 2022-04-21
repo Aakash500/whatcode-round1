@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --side:50px;
+}
+#square1, #square2{
+    display: inline-block;
+    width: var(--side);
+    height: var(--side);
+    background-color: greenyellow;
+}
+#square2{
+    margin-left: 10px;
+    position: relative;
+}
+#circle{
+    /* This code is to centre the circle inside square */
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+    --side:10px;
+    width: var(--side);
+    height: var(--side);
+    border-radius: 50%;
+    background-color: lightcoral;
+}
